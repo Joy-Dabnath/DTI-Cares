@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTI Cares</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="text/css" href="img/favicon.png">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-icon logo-pulse"><img src="img/1logo-white.png" alt="DTI CARES"></div>
+                
+            </div>
+            
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#" class="has-dropdown">ABOUT</a></li>
+                    <li><a href="#" class="has-dropdown">OUR WORK</a></li>
+                    <li><a href="#" class="has-dropdown">EXPEDITIONS</a></li>
+                    <li><a href="#" class="has-dropdown">YOUTH & EDUCATION</a></li>
+                    <li><a href="#" class="has-dropdown">RESOURCES</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="#" class="btn btn-primary btn-donate magnetic-btn"><i class="fa-solid fa-heart"></i> DONATE NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <!-- Video Background -->
+        <div class="video-background">
+            <div class="video-overlay"></div>
+            <video autoplay loop muted playsinline id="hero-video">
+                <!-- Replace with your hosted video path -->
+                <source src="video/hero3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Floating Particle Layer -->
+        <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+
+        <div class="hero-content-container">
+            <div class="hero-main-layout">
+                <!-- Left Side Content -->
+                <div class="hero-text-content">
+                    <h2 class="hero-title reveal fade-up">
+                        Protect Our Oceans.<br>
+                        Empower <span class="text-highlight">Future<br>Generations.</span>
+                    </h2>
+                    <p class="hero-description reveal fade-up delay-1" id="heroTypedText" data-typed-text="Together we restore coral reefs, build ocean awareness, and equip young minds to lead a sustainable future.">
+                    </p>
+                    
+                    <div class="hero-cta-group reveal fade-up delay-2">
+                        <a href="#" class="btn btn-primary magnetic-btn shimmer-btn">EXPLORE TRIPS</a>
+                        <a href="#" class="btn btn-outline magnetic-btn">DONATE NOW</a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators reveal fade-up delay-3">
+                        <div class="trust-item">
+                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                            <div class="trust-text">
+                                <strong>Trusted by 12+</strong>
+                                <span>Conservation Partners</span>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <span class="icon-badge"><i class="fa-solid fa-shield-halved"></i></span>
+                            <div class="trust-text">
+                                <strong>501(c)(3)</strong>
+                                <span>Certified Nonprofit</span>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <span class="icon-heart"><i class="fa-solid fa-heart-pulse"></i></span>
+                            <div class="trust-text">
+                                <strong>Every Trip Supports</strong>
+                                <span>Youth Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Mission Play Video -->
+                <div class="hero-video-trigger float-3d">
+    <button class="play-btn" id="open-video-modal">
+        <i class="fa-solid fa-play"></i>
+    </button>
+
+    <div class="video-trigger-text">
+        <span>OUR MISSION</span>
+        <strong>Watch Video</strong>
+    </div>
+</div>
+
+<!-- Video Modal -->
+<div id="video-modal" class="video-modal">
+    <div class="video-content">
+
+        <span class="close-video">&times;</span>
+
+        <video id="heroVideo" controls>
+            <source src="video/hero3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+    <div class="stats-bar-wrapper">
+        <div class="stats-bar">
+            <div class="stat-card tilt-card">
+                <div class="stat-icon"><img style="height: 50px; width: 50px;" src="img/i1.png"></div>
+                <div class="stat-info">
+                    <h3>Since 2014</h3>
+                    <p>Making Impact</p>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card tilt-card">
+                <div class="stat-icon"><img style="height: 50px; width: 50px;" src="img/i2.png"></div>
+                <div class="stat-info">
+                    <h3><span class="counter" data-target="1000" data-suffix="+">0</span></h3>
+                    <p>Coral Restored</p>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card tilt-card">
+                <div class="stat-icon"><img style="height: 50px; width: 50px;" src="img/i3.png"></div>
+                <div class="stat-info">
+                    <h3><span class="counter" data-target="50" data-suffix="+">0</span></h3>
+                    <p>Marine Expeditions</p>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card tilt-card">
+                <div class="stat-icon"><img style="height: 50px; width: 50px;" src="img/i4.png"></div>
+                <div class="stat-info">
+                    <h3><span class="counter" data-target="1200" data-suffix="+">0</span></h3>
+                    <p>Youth Engaged</p>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card tilt-card">
+                <div class="stat-icon"><img style="height: 50px; width: 50px;" src="img/i5.png"></div>
+                <div class="stat-info">
+                    <h3><span class="counter" data-target="12" data-suffix="+">0</span></h3>
+                    <p>Partner Organizations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Journey & Impact Section -->
+<section class="journey-section">
+    <!-- Top Timeline Component -->
+    <div class="timeline-container">
+        <h2 class="section-title reveal fade-up">Our Journey of Impact</h2>
+        <div class="timeline-wave-icon">
+            <svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 4C5 1 9 7 13 4C17 1 21 7 25 4C29 1 33 7 37 4" stroke="#00d2ff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <div class="timeline-steps">
+            <div class="timeline-item reveal fade-up">
+                <span class="timeline-year">2014</span>
+                <div class="timeline-icon-box">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+                <div class="timeline-info">
+                    <strong>DTI CARES</strong>
+                    <p>Founded</p>
+                </div>
+            </div>
+
+            <div class="timeline-arrow"><i class="fa-solid fa-long-arrow-right"></i></div>
+
+            <div class="timeline-item reveal fade-up delay-1">
+                <span class="timeline-year">2018</span>
+                <div class="timeline-icon-box">
+                    <i class="fa-solid fa-hand-holding-hand"></i>
+                </div>
+                <div class="timeline-info">
+                    <strong>Expanded</strong>
+                    <p>Coral Restoration</p>
+                </div>
+            </div>
+
+            <div class="timeline-arrow"><i class="fa-solid fa-long-arrow-right"></i></div>
+
+            <div class="timeline-item reveal fade-up delay-2">
+                <span class="timeline-year">2022</span>
+                <div class="timeline-icon-box">
+                    <i class="fa-solid fa-children"></i>
+                </div>
+                <div class="timeline-info">
+                    <strong>Youth Education</strong>
+                    <p>Programs Launched</p>
+                </div>
+            </div>
+
+            <div class="timeline-arrow"><i class="fa-solid fa-long-arrow-right"></i></div>
+
+            <div class="timeline-item reveal fade-up delay-3">
+                <span class="timeline-year">2026</span>
+                <div class="timeline-icon-box">
+                    <i class="fa-solid fa-earth-oceania"></i>
+                </div>
+                <div class="timeline-info">
+                    <strong>Stronger Oceans,</strong>
+                    <p>Brighter Future</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="impact-grid-container">
+        
+        <!-- Profile Card -->
+        <div class="profile-card reveal fade-up">
+            <div class="profile-img-wrapper">
+                <img src="img/sandra-valenzuela.png" alt="Sandra Valenzuela">
+            </div>
+            <div class="profile-meta">
+                <h4 class="profile-signature">Sandra Valenzuela</h4>
+                <p class="profile-role">Founder & Ocean Advocate</p>
+            </div>
+        </div>
+
+        <!-- Center Details Column -->
+        <div class="impact-text-content reveal fade-up delay-1">
+            <h3 class="impact-title">Diving with Purpose.<br>Conserving for Tomorrow.</h3>
+            <p class="impact-desc">
+                DTI CARES is a nonprofit organization dedicated to restoring coral reef ecosystems, advancing marine research, and inspiring the next generation of ocean stewards.
+            </p>
+            
+            <div class="mini-stats-row">
+                <div class="mini-stat-box">
+                    <strong>Since 2014</strong>
+                    <span>In Action</span>
+                </div>
+                <div class="mini-stat-box">
+                    <strong><i class="fa-solid fa-shield-halved text-cyan"></i> <span class="counter" data-target="1000" data-suffix="+">0</span></strong>
+                    <span>Coral Restored</span>
+                </div>
+                <div class="mini-stat-box">
+                    <strong><i class="fa-solid fa-anchor text-cyan"></i> <span class="counter" data-target="50" data-suffix="+">0</span></strong>
+                    <span>Marine Expeditions</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quote Block Card -->
+        <div class="quote-card-wrapper reveal fade-up delay-2">
+            <div class="quote-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <blockquote class="quote-text">
+                    Our oceans.<br>Our future.<br>Our responsibility.
+                </blockquote>
+                <div class="quote-author">
+                    <strong>Sandra Valenzuela</strong>
+                    <span>Founder, DTI CARES</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Journey & Impact Section -->
+
+<!-- Programs & Expeditions Section -->
+<section class="programs-expeditions-section">
+    <div class="section-wrapper">
+        
+        <!-- --- OUR PROGRAMS ROW --- -->
+        <div class="programs-block">
+            <div class="block-header reveal fade-up">
+                <div class="header-text">
+                    <h2 class="block-title">Our Programs</h2>
+                    <p class="block-subtitle">Making a difference across our 3 pillars</p>
+                </div>
+                <a href="#" class="view-all-link">VIEW ALL PROGRAMS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="programs-grid">
+                <!-- Program 1 -->
+                <div class="program-card tilt-card reveal fade-up">
+                    <div class="program-img">
+                        <img src="img/Coral Restoration.png" alt="Coral Restoration">
+                    </div>
+                    <div class="program-content">
+                        <h3>Coral Restoration</h3>
+                        <p>We restore damaged reefs and rebuild marine ecosystems.</p>
+                        <div class="program-footer">
+                            <span class="program-stat"><strong>250+</strong> Restoration Sites</span>
+                            <button class="circle-arrow-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card tilt-card reveal fade-up delay-1">
+                    <div class="program-img">
+                        <img src="img/Youth Ocean.png" alt="Youth Ocean Education">
+                    </div>
+                    <div class="program-content">
+                        <h3>Youth Ocean Education</h3>
+                        <p>Empowering young minds through hands-on learning & exploration.</p>
+                        <div class="program-footer">
+                            <span class="program-stat"><strong>1,200+</strong> Students Trained</span>
+                            <button class="circle-arrow-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card tilt-card reveal fade-up delay-2">
+                    <div class="program-img">
+                        <img src="img/program-research.png" alt="Ocean Research & Data">
+                    </div>
+                    <div class="program-content">
+                        <h3>Ocean Research & Data</h3>
+                        <p>Conducting research to protect marine life and inform global policy.</p>
+                        <div class="program-footer">
+                            <span class="program-stat"><strong>50+</strong> Research Projects</span>
+                            <button class="circle-arrow-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- UPCOMING MARINE EXPEDITIONS ROW --- -->
+        <div class="expeditions-block">
+            <div class="block-header reveal fade-up">
+                <div class="header-text">
+                    <h2 class="block-title">Upcoming Marine Expeditions</h2>
+                    <p class="block-subtitle">Join our life-changing ocean adventures</p>
+                </div>
+                <a href="#" class="view-all-link">VIEW ALL TRIPS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="expeditions-slider-container">
+                <div class="expeditions-grid">
+                    
+                    <!-- Card 1 (Beginner) -->
+                    <div class="expeditions-card tilt-card reveal fade-up">
+                        <div class="expedition-visual">
+                            <span class="badge badge-beginner">BEGINNER</span>
+                            <img src="img/17.png" alt="Maldives Coral Quest">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Maldives Coral Quest</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Easy</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Program</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(128)</span></div>
+                                <div class="price">$1,990</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (Intermediate) -->
+                    <div class="expeditions-card tilt-card reveal fade-up delay-1">
+                        <div class="expedition-visual">
+                            <span class="badge badge-intermediate">INTERMEDIATE</span>
+                            <img src="img/14.png" alt="Great Barrier Reef">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Great Barrier Reef</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Intermediate</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Program</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(91)</span></div>
+                                <div class="price">$2,390</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Advanced) -->
+                    <div class="expeditions-card tilt-card reveal fade-up delay-2">
+                        <div class="expedition-visual">
+                            <span class="badge badge-advanced">ADVANCED</span>
+                            <img src="img/18.png" alt="Komodo Deep Dive">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Komodo Deep Dive</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Advanced</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Program</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(74)</span></div>
+                                <div class="price">$2,790</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (Expert) -->
+                    <div class="expeditions-card tilt-card reveal fade-up delay-3">
+                        <div class="expedition-visual">
+                            <span class="badge badge-expert">EXPERT</span>
+                            <img src="img/Raja Ampat Expedition.png" alt="Raja Ampat Expedition">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Raja Ampat Expedition</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Expert</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Program</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(35)</span></div>
+                                <div class="price">$2,990</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 (Intermediate) -->
+                    <div class="expeditions-card tilt-card reveal fade-up">
+                        <div class="expedition-visual">
+                            <span class="badge badge-intermediate">INTERMEDIATE</span>
+                            <img src="img/11.png" alt="Turtle Conservation">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Turtle Conservation</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Intermediate</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Program</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(58)</span></div>
+                                <div class="price">$1,190</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 (Intermediate) -->
+                    <div class="expeditions-card tilt-card reveal fade-up">
+                        <div class="expedition-visual">
+                            <span class="badge badge-intermediate">INTERMEDIATE</span>
+                            <img src="img/19.png" alt="Turtle Conservation">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Turtle Conservation</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Intermediate</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Program</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(58)</span></div>
+                                <div class="price">$1,290</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 (Intermediate) -->
+                    <div class="expeditions-card tilt-card reveal fade-up">
+                        <div class="expedition-visual">
+                            <span class="badge badge-intermediate">INTERMEDIATE</span>
+                            <img src="img/10.png" alt="Turtle Conservation">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Turtle Conservation</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Intermediate</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Program</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(58)</span></div>
+                                <div class="price">$1,390</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+                    <!-- Card 8 (Beginner) -->
+                    <div class="expeditions-card tilt-card reveal fade-up delay-1">
+                        <div class="expedition-visual">
+                            <span class="badge badge-beginner">BEGINNER</span>
+                            <img src="img/Coral Nursery Project.png" alt="Coral Nursery Project">
+                        </div>
+                        <div class="expedition-meta">
+                            <h4>Coral Nursery Project</h4>
+                            <ul class="expedition-details">
+                                <li><i class="fa-regular fa-clock"></i> 7 Days</li>
+                                <li><i class="fa-regular fa-compass"></i> Easy</li>
+                                <li><i class="fa-solid fa-mask-snorkel"></i> Includes Equipment</li>
+                                <li><i class="fa-regular fa-heart"></i> Supports Youth Prog.</li>
+                            </ul>
+                            <div class="expedition-pricing-row">
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(43)</span></div>
+                                <div class="price">$1,490</div>
+                            </div>
+                            <button class="btn-book-now magnetic-btn">BOOK NOW</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Programs & Expeditions Section -->
+
+<!-- Donation Section Banner -->
+<section class="donation-banner-section">
+    <!-- Autoplay Video Background -->
+    <div class="donation-video-bg">
+        <div class="donation-overlay"></div>
+        <video autoplay loop muted playsinline id="donation-video">
+            <!-- Replace with your hosted video path -->
+            <source src="video/donation-sea-turtle.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="donation-container">
+        <!-- Floating Circular Badge (Right Edge Alignment) -->
+        <div class="floating-donate-badge">
+            <div class="badge-circle pulse-glow">
+                <i class="fa-solid fa-heart"></i>
+                <span>DONATE</span>
+            </div>
+        </div>
+
+        <div class="donation-flex-layout">
+            <!-- Left Info & Metrics Column -->
+            <div class="donation-text-column">
+                <h2 class="donation-title reveal fade-up">Make a Difference. Change the Future.</h2>
+                <p class="donation-subtitle reveal fade-up delay-1">
+                    Your contribution helps restore ocean reefs, support research, and empower youth ocean education programs.
+                </p>
+
+                <!-- Target Goal Progress Wrapper -->
+                <div class="goal-progress-container reveal fade-up delay-2">
+                    <div class="goal-meta-row">
+                        <span class="goal-label">Monthly Goal</span>
+                        <span class="goal-amount"><strong>$51,600</strong> <small>USD</small></span>
+                    </div>
+                    
+                    <div class="progress-bar-track">
+                        <!-- Custom styled data fill percentage matching the design image -->
+                        <div class="progress-bar-fill" data-fill="68" style="width: 0%;">
+                            <span class="progress-percentage-label">0%</span>
+                        </div>
+                    </div>
+                    
+                    <p class="progress-footer-text">Help us reach our goal this month!</p>
+                </div>
+
+                <!-- Live Donor Community Card -->
+                <div class="donor-community-card reveal fade-up delay-3">
+                    <div class="community-stats">
+                        <h3><span class="counter" data-target="5420" data-suffix="+">0</span></h3>
+                        <p>Donors This Month</p>
+                    </div>
+                    <div class="avatar-group">
+                        <img src="img/user1.jpg" alt="Donor avatar" class="avatar">
+                        <img src="img/user2.jpg" alt="Donor avatar" class="avatar">
+                        <img src="img/user3.jpg" alt="Donor avatar" class="avatar">
+                        <img src="img/user4.jpg" alt="Donor avatar" class="avatar">
+                        <img src="img/user5.jpg" alt="Donor avatar" class="avatar">
+                    </div>
+                    <span class="join-community-tag">Join Our Community</span>
+                </div>
+            </div>
+
+            <!-- Right Donation Input Form Component -->
+            <div class="donation-form-wrapper reveal fade-up delay-2">
+                <!-- Navigation Tabs -->
+                <div class="donation-tabs">
+                    <button class="tab-btn active" data-tab="monthly">Monthly</button>
+                    <button class="tab-btn" data-tab="one-time">One Time</button>
+                    <button class="tab-btn" data-tab="recurring">Recurring</button>
+                </div>
+
+                <!-- Form Content Body -->
+                <div class="donation-form-body">
+                    <div class="amount-grid">
+                        <button class="amount-btn" data-amount="25">$25</button>
+                        <button class="amount-btn active" data-amount="50">$50</button>
+                        <button class="amount-btn" data-amount="100">$100</button>
+                        <button class="amount-btn" data-amount="250">$250</button>
+                        <button class="amount-btn custom-amount-btn" data-amount="other">Other</button>
+                    </div>
+
+                    <!-- Hidden input to handle structural data if "Other" is selected -->
+                    <input type="number" class="custom-amount-input" placeholder="Enter amount..." style="display: none;">
+
+                    <button class="btn-submit-donation magnetic-btn shimmer-btn">DONATE NOW</button>
+                    
+                    <div class="secure-footer">
+                        <i class="fa-solid fa-shield-halved"></i> <span>100% Secure Donation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Science & Restoration Section -->
+<section class="science-restoration-section">
+    <div class="science-container">
+        
+        <!-- Left Side: Science Pillars -->
+        <div class="science-left-column">
+            <h2 class="science-section-title reveal fade-up">The Science Behind Our Impact</h2>
+            
+            <div class="science-pillars-grid">
+                <!-- Pillar 1 -->
+                <div class="science-pillar-item pillar-card tilt-card reveal fade-up">
+                    <div class="pillar-icon-wrapper">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3>Coral Propagation</h3>
+                    <p>We grow corals in nurseries and replant them</p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="science-pillar-item pillar-card tilt-card reveal fade-up delay-1">
+                    <div class="pillar-icon-wrapper">
+                        <i class="fa-solid fa-binoculars"></i>
+                    </div>
+                    <h3>Reef Monitoring</h3>
+                    <p>We track reef health using dive surveys & AI technology</p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="science-pillar-item pillar-card tilt-card reveal fade-up delay-2">
+                    <div class="pillar-icon-wrapper">
+                        <i class="fa-solid fa-temperature-half"></i>
+                    </div>
+                    <h3>Water Quality</h3>
+                    <p>We measure temperature, pH, salinity & pollution levels</p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="science-pillar-item pillar-card tilt-card reveal fade-up delay-3">
+                    <div class="pillar-icon-wrapper">
+                        <i class="fa-solid fa-shrimp"></i>
+                    </div>
+                    <h3>Biodiversity</h3>
+                    <p>Healthy reefs support 25% of all marine life</p>
+                </div>
+
+                <!-- Pillar 5 -->
+                <div class="science-pillar-item pillar-card tilt-card reveal fade-up delay-4">
+                    <div class="pillar-icon-wrapper">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+                    <h3>Climate Resilience</h3>
+                    <p>Restored reefs protect coastlines and absorb carbon</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Before vs After Image Slider -->
+        <div class="restoration-right-column">
+            <h2 class="science-section-title reveal fade-up">Before vs After Restoration</h2>
+            
+            <div class="before-after-slider" id="imageSlider">
+                <!-- After Image (Background layer) -->
+                <div class="slider-img img-after">
+                    <img src="img/after.png" alt="Thriving Thicker Reef After 12 Months">
+                    <span class="slider-label badge-after">
+                        <strong>After 12 Months</strong>
+                        <span>Thriving Reef</span>
+                    </span>
+                </div>
+
+                <!-- Before Image (Foreground resizable width layer) -->
+                <div class="slider-img img-before" id="beforeImgContainer">
+                    <img src="img/before.png" alt="Damaged Coral Reef Before Restoration">
+                    <span class="slider-label badge-before">
+                        <strong>Before</strong>
+                        <span>Damaged Reef</span>
+                    </span>
+                </div>
+
+                <!-- Draggable Selector Bar Control -->
+                <div class="slider-handle" id="sliderHandle">
+                    <div class="handle-button">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- 6666 -->
+
+<!-- Spotlight & Gallery Section -->
+<section class="spotlight-gallery-section">
+    <div class="gallery-container-wrapper">
+        
+        <!-- --- RESOURCE SPOTLIGHT ROW --- -->
+        <div class="spotlight-block">
+            <div class="spotlight-header reveal fade-up">
+                <div class="header-left">
+                    <h2>Our Impact in the Spotlight</h2>
+                    <p>Real stories, Real science. Real change.</p>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="view-all-spotlight">VIEW ALL <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="spotlight-grid">
+                <!-- Card 1 -->
+                <div class="spotlight-card tilt-card reveal fade-up">
+                    <div class="card-visual">
+                        <video autoplay loop muted playsinline>
+                            <source src="video/media-coverage.mp4" type="video/mp4">
+                        </video>
+                        <div class="visual-overlay"></div>
+                        <span class="icon-indicator"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Media Coverage</h3>
+                        <p>Read articles and interviews</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="spotlight-card tilt-card reveal fade-up delay-1">
+                    <div class="card-visual">
+                        <video autoplay loop muted playsinline>
+                            <source src="video/documentaries-preview.mp4" type="video/mp4">
+                        </video>
+                        <div class="visual-overlay"></div>
+                        <span class="icon-indicator"><i class="fa-solid fa-circle-play"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Documentaries</h3>
+                        <p>Watch our story in action</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="spotlight-card tilt-card reveal fade-up delay-2">
+                    <div class="card-visual">
+                        <video autoplay loop muted playsinline>
+                            <source src="video/publications-preview.mp4" type="video/mp4">
+                        </video>
+                        <div class="visual-overlay"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Research Publications</h3>
+                        <p>Explore our scientific research</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="spotlight-card tilt-card reveal fade-up delay-3">
+                    <div class="card-visual">
+                        <video autoplay loop muted playsinline>
+                            <source src="video/partner-stories-preview.mp4" type="video/mp4">
+                        </video>
+                        <div class="visual-overlay"></div>
+                        <span class="icon-indicator"><i class="fa-solid fa-rotate"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Partner Stories</h3>
+                        <p>Read stories from our partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- OCEAN MOMENTS ASYMMETRIC MASONRY VIDEO GALLERY --- -->
+        <div class="gallery-block">
+            <div class="gallery-header reveal fade-up">
+                <div class="gallery-header-text">
+                    <h2>Ocean Moments</h2>
+                    <p>Captured in Action</p>
+                </div>
+                <button class="btn-view-gallery">VIEW FULL GALLERY <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Asymmetric Grid Architecture with Autoplay Videos -->
+            <div class="masonry-video-grid">
+                
+                <!-- Column 1 Matrix -->
+                <div class="grid-column col-1">
+                    <div class="gallery-item large-video">
+                        <video autoplay loop muted playsinline>
+                            <source src="video/1.1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-row">
+                        <div class="gallery-item item-mini"><video autoplay loop muted playsinline><source src="video/1.mp4" type="video/mp4"></video></div>
+                        <div class="gallery-item item-mini"><video autoplay loop muted playsinline><source src="video/2.mp4" type="video/mp4"></video></div>
+                    </div>
+                </div>
+
+                <!-- Column 2 Matrix -->
+                <div class="grid-column col-2">
+                    <div class="gallery-item mid-video"><video autoplay loop muted playsinline><source src="video/3.mp4" type="video/mp4"></video></div>
+                    <div class="gallery-item mid-video"><video autoplay loop muted playsinline><source src="video/4.mp4" type="video/mp4"></video></div>
+                </div>
+
+                <!-- Column 3 Matrix -->
+                <div class="grid-column col-3">
+                    <div class="gallery-item item-stretch"><video autoplay loop muted playsinline><source src="video/documentaries-preview.mp4" type="video/mp4"></video></div>
+                    <div class="gallery-item item-landscape"><video autoplay loop muted playsinline><source src="video/hero2.mp4" type="video/mp4"></video></div>
+                </div>
+
+                <!-- Column 4 Matrix -->
+                <div class="grid-column col-4">
+                    <div class="gallery-item long-video"><video autoplay loop muted playsinline><source src="video/coral-wide.mp4" type="video/mp4"></video></div>
+                    <div class="gallery-item item-mini-wide"><video autoplay loop muted playsinline><source src="video/reef-shoal.mp4" type="video/mp4"></video></div>
+                </div>
+
+                <!-- Column 5 Matrix -->
+                <div class="grid-column col-5">
+                    <div class="gallery-item standard-video"><video autoplay loop muted playsinline><source src="video/diver-deep.mp4" type="video/mp4"></video></div>
+                    <div class="gallery-item standard-video"><video autoplay loop muted playsinline><source src="video/fish-school.mp4" type="video/mp4"></video></div>
+                </div>
+
+                <!-- Column 6 Matrix -->
+                <div class="grid-column col-6">
+                    <div class="gallery-item standard-video"><video autoplay loop muted playsinline><source src="video/turtle-reef.mp4" type="video/mp4"></video></div>
+                    <div class="gallery-item standard-video"><video autoplay loop muted playsinline><source src="video/coral-orange.mp4" type="video/mp4"></video></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- News, Community & Footer Section -->
+<section class="news-community-footer-section">
+    <div class="global-container">
+        
+        <!-- --- LATEST NEWS & COMMUNITY LAYOUT ROW --- -->
+        <div class="news-community-grid">
+            
+            <!-- Left Side: Latest News -->
+            <div class="news-block">
+                <div class="block-header reveal fade-up">
+                    <div class="header-text">
+                        <h2 class="block-title">Latest News</h2>
+                        <p class="block-subtitle">Stay updated with our latest stories</p>
+                    </div>
+                    <a href="#" class="view-all-link">VIEW ALL NEWS <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="cards-layout-row">
+                    <!-- News Card 1 -->
+                    <div class="news-card tilt-card reveal fade-up">
+                        <div class="card-media">
+                            <span class="news-tag tag-expedition">EXPEDITION</span>
+                            <img src="img/news-maldives.png" alt="Maldives Expedition">
+                        </div>
+                        <div class="card-body">
+                            <h3>Maldives Expedition 2026 Now Open</h3>
+                            <div class="author-meta">
+                                <img src="img/user1.jpg" alt="Sandra V." class="author-thumb">
+                                <div class="author-info">
+                                    <strong>Sandra V.</strong>
+                                    <span>May 18, 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div class="news-card tilt-card reveal fade-up delay-1">
+                        <div class="card-media">
+                            <span class="news-tag tag-conservation">CONSERVATION</span>
+                            <img src="img/news-coral.png" alt="Coral Nursery">
+                        </div>
+                        <div class="card-body">
+                            <h3>New Coral Nursery Project Launch</h3>
+                            <div class="author-meta">
+                                <img src="img/user2.jpg" alt="DTI Team" class="author-thumb">
+                                <div class="author-info">
+                                    <strong>DTI Team</strong>
+                                    <span>May 15, 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div class="news-card tilt-card reveal fade-up delay-2">
+                        <div class="card-media">
+                            <span class="news-tag tag-education">EDUCATION</span>
+                            <img src="img/news-youth.png" alt="Youth Ambassadors">
+                        </div>
+                        <div class="card-body">
+                            <h3>Youth Ocean Ambassadors Program</h3>
+                            <div class="author-meta">
+                                <img src="img/user3.jpg" alt="Sandra V." class="author-thumb">
+                                <div class="author-info">
+                                    <strong>Jandra V.</strong>
+                                    <span>May 13, 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: What Our Community Says -->
+            <div class="community-block">
+                <div class="block-header reveal fade-up">
+                    <div class="header-text">
+                        <h2 class="block-title">What Our Community Says</h2>
+                        <p class="block-subtitle">Real stories from our volunteers & partners</p>
+                    </div>
+                    <a href="#" class="view-all-link">VIEW ALL <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="cards-layout-row">
+                    <!-- Testimonial Video Card 1 -->
+                    <div class="testimonial-card tilt-card reveal fade-up">
+                        <div class="video-preview-box">
+                            <video autoplay loop muted playsinline>
+                                <source src="video/media-coverage.mp4" type="video/mp4">
+                            </video>
+                            <button class="play-overlay-btn"><i class="fa-solid fa-circle-play"></i></button>
+                            <span class="source-tag">Volunteer</span>
+                        </div>
+                        <div class="testimonial-body">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Amazing experience! Changed my life."</p>
+                            <div class="user-meta">
+                                <img src="img/user4.jpg" alt="Sarah J." class="user-thumb">
+                                <div class="user-details">
+                                    <strong>Sarah J.</strong>
+                                    <span><i class="fa-solid fa-location-dot"></i> USA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Video Card 2 -->
+                    <div class="testimonial-card tilt-card reveal fade-up delay-1">
+                        <div class="video-preview-box">
+                            <video autoplay loop muted playsinline>
+                                <source src="video/reef-shoal.mp4" type="video/mp4">
+                            </video>
+                            <button class="play-overlay-btn"><i class="fa-solid fa-circle-play"></i></button>
+                            <span class="source-tag">Volunteer</span>
+                        </div>
+                        <div class="testimonial-body">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Professional team doing real impact."</p>
+                            <div class="user-meta">
+                                <img src="img/user5.jpg" alt="Lukas M." class="user-thumb">
+                                <div class="user-details">
+                                    <strong>Lukas M.</strong>
+                                    <span><i class="fa-solid fa-location-dot"></i> Germany</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Video Card 3 -->
+                    <div class="testimonial-card tilt-card reveal fade-up delay-2">
+                        <div class="video-preview-box">
+                            <video autoplay loop muted playsinline>
+                                <source src="video/fish-school.mp4" type="video/mp4">
+                            </video>
+                            <button class="play-overlay-btn"><i class="fa-solid fa-circle-play"></i></button>
+                            <span class="source-tag">Partner</span>
+                        </div>
+                        <div class="testimonial-body">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Best conservation organization!"</p>
+                            <div class="user-meta">
+                                <img src="img/user1.jpg" alt="Akio T." class="user-thumb">
+                                <div class="user-details">
+                                    <strong>Akio T.</strong>
+                                    <span><i class="fa-solid fa-location-dot"></i> Japan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- --- TRUST CREDENTIALS SEALS BAR --- -->
+        <div class="trust-seals-wrapper">
+            <div class="trust-seals-bar">
+                <div class="seal-item">
+                    <div class="seal-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="seal-text"><strong>501(c)(3)</strong><span>Certified Nonprofit</span></div>
+                </div>
+                <div class="seal-item">
+                    <div class="seal-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div class="seal-text"><strong>Transparent</strong><span>Donations</span></div>
+                </div>
+                <div class="seal-item">
+                    <div class="seal-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="seal-text"><strong>GuideStar</strong><span>Platinum Seal</span></div>
+                </div>
+                <div class="seal-item">
+                    <div class="seal-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="seal-text"><strong>Candid</strong><span>Verified</span></div>
+                </div>
+                <div class="seal-item">
+                    <div class="seal-icon"><i class="fa-solid fa-users-rectangle"></i></div>
+                    <div class="seal-text"><strong>Volunteer</strong><span>Since 2014</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- --- GLOBAL SITE FOOTER MASTER COMPONENT --- -->
+    <footer class="site-footer">
+        <div class="footer-primary-row">
+            <!-- Col 1: Brand Info -->
+            <div class="footer-column brand-summary">
+                <div class="logo-area">
+                    <div class="logo-icon-footer"><img src="img/logo-white.png" alt="DTI CARES"></div>
+                    
+                </div>
+                <p class="footer-about-text">
+                    We restore coral reefs, advance marine research, and educate future ocean leaders.
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="footer-column navigation-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Programs</a></li>
+                    <li><a href="#">Expeditions</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Youth & Education</a></li>
+                    <li><a href="#">News & Stories</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Resources -->
+            <div class="footer-column navigation-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Impact Reports</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Get Involved -->
+            <div class="footer-column navigation-column">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">Host an Event</a></li>
+                    <li><a href="#">Corporate Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact Info -->
+            <div class="footer-column contact-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-details">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>123 Ocean Drive, Marine City,<br>CA 95010, USA</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (831) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@dticares.org</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 6: Mini Map Embed Container -->
+            <div class="footer-column map-column">
+        <div class="footer-map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12598.10005859733!2d-122.52433120702906!3d37.87140293998043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858511e268a8af%3A0xdd261066edac1167!2sMarin%20City%2C%20CA%2094965%2C%20USA!5e0!3m2!1sen!2sbd!4v1784460567252!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" style="border:0; border-radius:16px;"></iframe>
+        </div>
+        </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+            <div class="bottom-left">
+                <p>&copy; 2026 DTI CARES. All Rights Reserved.</p>
+            </div>
+            <div class="bottom-right">
+                <a href="#">Privacy Policy</a>
+                <span class="bar-separator">|</span>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Fixed Floating Action -->
+    <button class="back-to-top-btn" id="scrollTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</section>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
